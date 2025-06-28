@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -41,6 +42,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-jetbrains-mono: var(--font-jetbrains-mono);
 }
 
 :root {
@@ -117,6 +119,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#1c1c1c] text-white font-[jetbrains] leading-loose;
   }
 }
