@@ -72,7 +72,7 @@ function SheetContent({
         {children}
         <SheetPrimitive.Close
           className="absolute top-4 right-4 transition-opacity outline-none">
-          <IoMdClose className="text-2xl text-white" />
+          <IoMdClose className="text-2xl text-[#ffc917]" />
           <span className="sr-only">Close</span>
         </SheetPrimitive.Close>
       </SheetPrimitive.Content>

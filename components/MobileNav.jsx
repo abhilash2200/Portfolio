@@ -17,8 +17,8 @@ const MobileNav = () => {
   const pathname = usePathname();
   return (
     <Sheet>
-    <SheetTrigger className="flex items-center justify-center p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition">
-      <CiMenuFries className="text-2xl" />
+    <SheetTrigger className="flex items-center justify-center p-2 rounded-md hover:bg-gray-100 transition">
+      <CiMenuFries className="text-2xl text-[#ffc917]" />
     </SheetTrigger>
   
     <SheetContent className="flex flex-col px-6 py-8" aria-describedby={null}>
@@ -27,7 +27,7 @@ const MobileNav = () => {
       <div className="mt-20 mb-20 flex items-center justify-center">
         <Link href="/" className="hover:opacity-90 transition">
           <h1 className="text-3xl font-bold tracking-tight">
-            Header<span className="text-blue-500">.dev</span>
+            Abhilash<span className="text-[#ffc917]">.</span>
           </h1>
         </Link>
       </div>
@@ -40,8 +40,8 @@ const MobileNav = () => {
             key={link.href}
             className={`transition-colors px-2 py-1 rounded-md capitalize
                 ${pathname === link.href
-                  ? "text-white bg-black underline underline-offset-8 decoration-[1.5px] decoration-blue-500"
-                  : "text-gray-100 hover:text-white hover:bg-black hover:underline hover:underline-offset-8 hover:decoration-[1.5px] hover:decoration-blue-500"
+                  ? "underline underline-offset-8 decoration-[1.5px] decoration-[#ffc917] text-[#ffc917]"
+                  : "hover:underline hover:underline-offset-8 hover:decoration-[1.5px] hover:decoration-[#ffc917] hover:text-[#ffc917] text-white"
                 }`}
             >
             {link.label}

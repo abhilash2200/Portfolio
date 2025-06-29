@@ -24,8 +24,8 @@ const Nav = () => {
             href={href}
             className={`px-3 py-1.5 text-sm font-medium rounded-md transition-colors duration-200
               ${isActive 
-                ? "underline underline-offset-8 decoration-1.5 decoration-blue-500"
-                : "hover:underline hover:underline-offset-8 hover:decoration-1.5 hover:decoration-blue-500 text-white hover:bg-[#000000]"
+                ? "underline underline-offset-8 decoration-1.5 decoration-[#ffc917] text-[#ffc917]"
+                : "hover:underline hover:underline-offset-8 hover:decoration-1.5 hover:decoration-[#ffc917] hover:text-[#ffc917] text-white"
               }`}
           >
             {label}
